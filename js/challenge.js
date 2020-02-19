@@ -4,6 +4,7 @@ const plusButton = document.getElementById("plus");
 const minusButton = document.getElementById("minus");
 const likeButton = document.getElementById("heart");
 const pauseButton = document.getElementById("pause");
+const submitButton = document.getElementById("submit");
 
 let interval = setInterval(incCounter, 1000);
 let intervalPaused = false;
