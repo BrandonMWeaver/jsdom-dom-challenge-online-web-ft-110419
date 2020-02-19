@@ -6,8 +6,6 @@ const likeButton = document.getElementById("heart");
 const pauseButton = document.getElementById("pause");
 const submitButton = document.getElementById("submit");
 
-let likes = 0;
-
 let interval = setInterval(incCounter, 1000);
 let intervalPaused = false;
 
@@ -29,7 +27,7 @@ minusButton.addEventListener("click", function()
 likeButton.addEventListener("click", function()
 {
   num = counter.innerText;
-  
+  li
 });
 
 pauseButton.addEventListener("click", function()
