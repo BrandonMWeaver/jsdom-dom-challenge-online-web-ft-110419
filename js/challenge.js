@@ -70,4 +70,3 @@ submitButton.addEventListener("click", function(event)
   document.body.append(p);
   document.getElementById("comment-input").value = '';
 });
-
