@@ -38,6 +38,7 @@ pauseButton.addEventListener("click", function()
     clearInterval(interval);
     plusButton.disabled = true;
     minusButton.disabled = true;
+    likeButton.disabled = true;
     pauseButton.innerText = "resume";
   }
   intervalPaused = !intervalPaused;
