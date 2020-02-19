@@ -30,7 +30,7 @@ pauseButton.addEventListener("click", function()
   }
   else
   {
-    setInterval(interval);
+    interval;
   }
   intervalPaused = !intervalPaused;
 });
