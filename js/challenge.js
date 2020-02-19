@@ -27,6 +27,7 @@ minusButton.addEventListener("click", function()
 likeButton.addEventListener("click", function()
 {
   num = counter.innerText;
+  
   alert(num);
 });
 
