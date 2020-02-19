@@ -6,6 +6,8 @@ const likeButton = document.getElementById("heart");
 const pauseButton = document.getElementById("pause");
 const submitButton = document.getElementById("submit");
 
+let nums = [];
+
 let interval = setInterval(incCounter, 1000);
 let intervalPaused = false;
 
@@ -27,8 +29,16 @@ minusButton.addEventListener("click", function()
 likeButton.addEventListener("click", function()
 {
   num = counter.innerText;
-  
-  alert(num);
+  nums.push(num);
+  let timesLiked = 0;
+  for (let i = 0; i < nums.length; i++)
+  {
+    if (nums[i] == num)
+    {
+      timesLiked++;
+    }
+  }
+  alert(`${num} has been liked ${timesLiked} times!`);
 });
 
 pauseButton.addEventListener("click", function()
