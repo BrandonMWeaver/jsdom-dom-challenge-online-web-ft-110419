@@ -24,6 +24,11 @@ minusButton.addEventListener("click", function()
   counter.innerText = parseInt(counter.innerText) - 1;
 });
 
+likeButton.addEventListener("click", function()
+{
+  
+});
+
 pauseButton.addEventListener("click", function()
 {
   if (intervalPaused)
