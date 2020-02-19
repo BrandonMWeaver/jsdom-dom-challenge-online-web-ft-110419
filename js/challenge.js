@@ -51,6 +51,6 @@ submitButton.addEventListener("click", function(event)
   const p = document.createElement("p");
   p.innerText = document.getElementById("comment-input").value;
   document.body.append(p);
-  
+  document.getElementById("comment-input").innerText = '';
 });
 
