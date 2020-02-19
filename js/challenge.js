@@ -24,5 +24,13 @@ minusButton.addEventListener("click", function()
 
 pauseButton.addEventListener("click", function()
 {
-  clearInterval(interval);
+  if (intervalPaused)
+  {
+    clearInterval(interval);
+  }
+  else
+  {
+    setInterval(interval);
+  }
+  intervalPaused = !intervalPaused;
 });
