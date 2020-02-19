@@ -1,4 +1,5 @@
 const counter = document.getElementById("counter");
+const addButton = document.getElementById("add");
 const minusButton = document.getElementById("minus");
 
 setInterval(incCounter, 1000);
