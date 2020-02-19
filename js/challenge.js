@@ -30,6 +30,7 @@ pauseButton.addEventListener("click", function()
     interval = setInterval(incCounter, 1000);
     plusButton.disabled = false;
     minusButton.disabled = false;
+    likeButton.disabled = false;
     pauseButton.innerText = "pause";
   }
   else
