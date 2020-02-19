@@ -10,5 +10,5 @@ function incCounter()
 
 minusButton.addEventListener("click", function(e)
 {
-  
+  counter.innerText = parseInt(counter.innerText) - 1;
 });
