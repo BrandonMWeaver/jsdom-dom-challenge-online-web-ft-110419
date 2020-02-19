@@ -32,6 +32,7 @@ pauseButton.addEventListener("click", function()
   else
   {
     clearInterval(interval);
+    
     pauseButton.innerText = "resume";
   }
   intervalPaused = !intervalPaused;
