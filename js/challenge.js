@@ -44,3 +44,9 @@ pauseButton.addEventListener("click", function()
   }
   intervalPaused = !intervalPaused;
 });
+
+submitButton.addEventListener("click", function(event)
+{
+  
+});
+
