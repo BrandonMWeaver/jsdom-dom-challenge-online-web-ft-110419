@@ -10,12 +10,17 @@ function incCounter()
   counter.innerText = parseInt(counter.innerText) + 1;
 }
 
-plusButton.addEventListener("click", function(e)
+plusButton.addEventListener("click", function()
 {
   counter.innerText = parseInt(counter.innerText) + 1;
 });
 
-minusButton.addEventListener("click", function(e)
+minusButton.addEventListener("click", function()
 {
   counter.innerText = parseInt(counter.innerText) - 1;
+});
+
+pauseButton.addEventListener("click", function()
+{
+  setInterval(incCounter, 0);
 });
