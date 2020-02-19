@@ -27,6 +27,7 @@ pauseButton.addEventListener("click", function()
   if (intervalPaused)
   {
     interval = setInterval(incCounter, 1000);
+    pauseButton.innerText = "pause";
   }
   else
   {
