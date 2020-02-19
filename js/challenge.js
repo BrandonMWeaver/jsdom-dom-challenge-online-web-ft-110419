@@ -1,6 +1,7 @@
 const counter = document.getElementById("counter");
 const plusButton = document.getElementById("plus");
 const minusButton = document.getElementById("minus");
+const pauseButton = document.getElementById("pause");
 
 setInterval(incCounter, 1000);
 
