@@ -4,7 +4,7 @@ const plusButton = document.getElementById("plus");
 const minusButton = document.getElementById("minus");
 const pauseButton = document.getElementById("pause");
 
-const interval = setInterval(incCounter, 1000);
+let interval = setInterval(incCounter, 1000);
 let intervalPaused = false;
 
 function incCounter()
@@ -26,11 +26,11 @@ pauseButton.addEventListener("click", function()
 {
   if (intervalPaused)
   {
-    clearInterval(interval);
+    interval = setInterval(incCounter, 1000);
   }
   else
   {
-    interval;
+    clearInterval(interval);
   }
   intervalPaused = !intervalPaused;
 });
