@@ -48,7 +48,8 @@ pauseButton.addEventListener("click", function()
 submitButton.addEventListener("click", function(event)
 {
   event.preventDefault();
-  const p = document.getElementById("comment-input").value;
-  
+  const p = document.createElement("p");
+  p.innerText = document.getElementById("comment-input").value;
+  document.body.append(p);
 });
 
