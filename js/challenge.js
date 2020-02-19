@@ -27,12 +27,15 @@ pauseButton.addEventListener("click", function()
   if (intervalPaused)
   {
     interval = setInterval(incCounter, 1000);
+    plusButton.disabled = false;
+    minusButton.disabled = false;
     pauseButton.innerText = "pause";
   }
   else
   {
     clearInterval(interval);
-    
+    plusButton.disabled = true;
+    minusButton.disabled = true;
     pauseButton.innerText = "resume";
   }
   intervalPaused = !intervalPaused;
